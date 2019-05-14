@@ -44,23 +44,23 @@ exports.pageMenu = function(){
 exports.buildPage = function(page_title, page_menu, page_content){
 
     
-    // fs.readFile('./public/css/login_style.css', 'utf8', function(error, data) {
-        
-    //     if (error) {
-    //         // response.writeHead(404);
-    //         // response.write('File not found');
-    //         console.log("error css");
-    //        global.styledata='';
-    //     } else {
-    //         // response.write(data);
-    //         // ret.replace("{style_}",data,'g');
-    //         //console.log(data);
-    //         global.styledata+=data;
-    //     }
-        
-    //   });
-    //   console.log(global.styledata);
-    var styledata="#ti{ text-align:center; margin-top:150px;} form{margin-top:20px;margin-left:600px;display: block;}.user{  display: block;}.pass{margin-top:50px;display: block;} .button{ display: block;margin-top:20px;margin-left: 110px;}#un{    margin-left:20px;}#psw{     margin-left:25px;};";
+//      fs.readFile('./public/css/login_style.css', 'utf8', function(error, data) {
+//         
+//          if (error) {
+//              // response.writeHead(404);
+//              // response.write('File not found');
+//              console.log("error css");
+//             global.styledata='';
+//          } else {
+//              response.write(data);
+//              ret.replace("{style_}",data,'g');
+//              console.log(data);
+//              global.styledata+=data;
+//          }
+//         
+//        });
+//        console.log(global.styledata);
+    var styledata="#ti{ text-align:center; margin-top:150px;} form{text-align:center; display: block;}.user{  display: block;}.pass{margin-top:50px;display: block;} .button{}#un{    margin-left:20px;}#psw{     margin-left:25px;};";
     var header="<head> <style>"+ styledata+ "</style> <title>Login</title> </head>";
    var page_template = "<html>" +
          header+

@@ -28,6 +28,8 @@ var http_server_callback_function = function(req, resp){
     if(url_path === '/')
     {
         // home_module.showHomePage(req, resp);
+        resp.writeHead(302, {'Content-Type' : 'text/html', 'Location': '/login'});
+        resp.end("Redirecting... Please wait");
     }else if(url_path === '/login' )
    {
       login_module.showLoginPage(req, resp);
