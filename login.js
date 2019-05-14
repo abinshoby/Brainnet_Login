@@ -47,7 +47,7 @@ exports.checkLoginAccount = function(req, resp){
             // If user name and password is correct.
             if(user_name === 'root' && password === 'password')
             {
-                resp.writeHead(200, {'Content-Type':'text/html'});
+                resp.writeHead(302, {'Content-Type':'text/html', 'Location': 'https://abhiramshibu.tk/test/jarvisreborn/'});
 
                 // Assign page title.
                 var page_title = "Login success";
